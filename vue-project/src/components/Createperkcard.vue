@@ -1,11 +1,16 @@
 <template>
-  <div>
-
-  </div>
+<perk>
+    <perk #icon>
+    <stoppingpower/>
+    </perk>
+    <template #heading>Perk</template>
+    Stopping power adds 15% damage to your shots.
+  </perk>
 </template>
+  
 
 <script setup>
-
+import stoppingpower from './icons/stoppingpower.PNG'
 </script>
 
 <style scoped>

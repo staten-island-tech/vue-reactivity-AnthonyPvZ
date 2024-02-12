@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import perk from '../components/Createperkcard.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <perk />
   </main>
 </template>
