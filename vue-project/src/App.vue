@@ -17,7 +17,6 @@
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Finalperks from './components/Finalperks.vue'
 </script>
 
 <style lang="scss" scoped>

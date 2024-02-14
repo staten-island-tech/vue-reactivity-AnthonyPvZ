@@ -1,16 +1,22 @@
 <template>
-<perk>
-    <perk #icon>
-    <stoppingpower/>
-    </perk>
-    <template #heading>Perk</template>
-    Stopping power adds 15% damage to your shots.
-  </perk>
+<div>
+  <h1>{{ Perk.name }}</h1>
+  <img :src="Perk.img" alt=""/>
+  <h2>{{ Perk.desc }}</h2>
+  <button @click="incredment">Clickme</button>
+</div>
 </template>
   
 
 <script setup>
-import stoppingpower from './icons/stoppingpower.PNG'
+import { ref } from "vue"
+const props = defineProps({
+  Perk: Object,
+});
+const clicked = ref(0);
+function increment(){
+  clicked.value++;
+}
 </script>
 
 <style scoped>
