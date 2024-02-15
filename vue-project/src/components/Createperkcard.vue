@@ -12,7 +12,8 @@
 const props = defineProps({
   Destination: Object,
 });
-
+import { reactive } from 'vue'
+export const store = reactive({count:0, increment(){this.count++}})
 function pickme(){
   // how to send the image to another div with a click me forgor
 }
