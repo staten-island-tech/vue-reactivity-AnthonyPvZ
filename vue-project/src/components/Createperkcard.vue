@@ -1,21 +1,20 @@
 <template>
 <div>
-  <h1>{{ Perk.name }}</h1>
-  <img :src="Perk.img" alt=""/>
-  <h2>{{ Perk.desc }}</h2>
-  <button @click="incredment">Clickme</button>
+  <h1>{{ Destination.name }}</h1>
+  <img :src="Destination.image" alt=""/>
+  <h2>{{ Destination.desc }}</h2>
+  <button @click="pickme">Equip</button>
 </div>
 </template>
   
 
 <script setup>
-import { ref } from "vue"
 const props = defineProps({
-  Perk: Object,
+  Destination: Object,
 });
-const clicked = ref(0);
-function increment(){
-  clicked.value++;
+
+function pickme(){
+  // how to send the image to another div with a click me forgor
 }
 </script>
 

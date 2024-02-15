@@ -3,7 +3,7 @@
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <Finalperks msg="You did it!" />
+      <p>"You did it!"</p>
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <style lang="scss" scoped>
