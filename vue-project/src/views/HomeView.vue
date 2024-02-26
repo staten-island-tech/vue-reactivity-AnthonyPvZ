@@ -18,7 +18,7 @@ import deepimpact from '../components/icons/Deepimpact.png';
 import lifeinfusion from '../components/icons/Lifeinfusion.png';
 import luckycharm from '../components/icons/Luckycharm.png';
 import survivalcontract from '../components/icons/Survivalcontract.png';
-import { store } from '../components/Createperkcard.vue';
+
 
 const perks = [
   {

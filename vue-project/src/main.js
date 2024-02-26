@@ -12,3 +12,13 @@ app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
+
+import { reactive } from 'vue'
+
+export const store = reactive({
+    count: 0,
+    increment() {
+        this.count++
+        this.innerHTML = "yay"
+    }
+})

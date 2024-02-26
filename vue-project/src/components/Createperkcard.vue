@@ -3,7 +3,7 @@
   <h1>{{ Destination.name }}</h1>
   <img :src="Destination.image" alt=""/>
   <h2>{{ Destination.desc }}</h2>
-  <button @click="pickme">Equip</button>
+  <button @click="store.increment">{{ store.count }}</button>
 </div>
 </template>
   
@@ -12,11 +12,7 @@
 const props = defineProps({
   Destination: Object,
 });
-import { reactive } from 'vue'
-export const store = reactive({count:0, increment(){this.count++}})
-function pickme(){
-  // how to send the image to another div with a click me forgor
-}
+import { store } from '../main'
 </script>
 
 <style scoped>
