@@ -17,8 +17,9 @@ import { reactive } from 'vue'
 
 export const store = reactive({
     count: 0,
+    document: "yay",
     increment() {
         this.count++
-        this.innerHTML = "yay"
+        this.document = "nooo"
     }
 })

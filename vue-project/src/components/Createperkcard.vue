@@ -3,7 +3,7 @@
   <h1>{{ Destination.name }}</h1>
   <img :src="Destination.image" alt=""/>
   <h2>{{ Destination.desc }}</h2>
-  <button @click="store.increment">{{ store.count }}</button>
+  <button v-on:click="this.$parent.text='Hello'">Equip</button>
 </div>
 </template>
   
