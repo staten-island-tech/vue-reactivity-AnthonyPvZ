@@ -40,4 +40,5 @@ const perks = [
       image: survivalcontract,
     },
   ]
+  // v-if and vue emit()
 </script>
