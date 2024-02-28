@@ -3,7 +3,7 @@
   <h1>{{ Destination.name }}</h1>
   <img :src="Destination.image" alt=""/>
   <h2>{{ Destination.desc }}</h2>
-  <button v-on:click="this.$parent.text='Hello'">Equip</button>
+  <button @click="$emit('inc')">Equip</button>
 </div>
 </template>
   
@@ -12,7 +12,7 @@
 const props = defineProps({
   Destination: Object,
 });
-import { store } from '../main'
+
 </script>
 
 <style scoped>

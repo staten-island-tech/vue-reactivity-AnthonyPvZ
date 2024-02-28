@@ -4,6 +4,7 @@
     v-for="destination in perks"
     :key="destination.name"
     :Destination="destination"
+    @inc="document.querySelector('#deck') + destination.image"
   />
 </div> 
 <div id="deck">
@@ -40,5 +41,5 @@ const perks = [
       image: survivalcontract,
     },
   ]
-  // v-if and vue emit()
+  // https://stackoverflow.com/questions/52424306/add-html-element-in-div-vuejs
 </script>
