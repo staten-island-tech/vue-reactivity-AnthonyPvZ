@@ -5,10 +5,14 @@
     :key="destination.name"
     :Destination="destination"
     @inc="document.querySelector('#deck') + destination.image"
-  />
+  /> 
 </div> 
 <div id="deck">
-
+  <Createperkcard
+   v-for="destination in store"
+   :key="destination.name"
+   :Destination="destination"
+  />
 </div>
 </template>
 
@@ -41,5 +45,8 @@ const perks = [
       image: survivalcontract,
     },
   ]
+
+const store = []
   // https://stackoverflow.com/questions/52424306/add-html-element-in-div-vuejs
+  // TLDR ^ push item info into a new array for another template to iterate over should work if .push is nice
 </script>
