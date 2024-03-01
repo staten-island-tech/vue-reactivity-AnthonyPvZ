@@ -1,18 +1,13 @@
 <template>
 <div>
   <Createperkcard
-    v-for="destination in perks"
-    :key="destination.name"
+    v-for="(destination,index) in perks"
+    :key="index"
     :Destination="destination"
-    @inc="document.querySelector('#deck') + destination.image"
+    @inc="console.log('pushed');{array = destination;perks.push(array)};console.log(perks);"
   /> 
 </div> 
 <div id="deck">
-  <Createperkcard
-   v-for="destination in store"
-   :key="destination.name"
-   :Destination="destination"
-  />
 </div>
 </template>
 
@@ -23,6 +18,7 @@ import deepimpact from '../components/icons/Deepimpact.png';
 import lifeinfusion from '../components/icons/Lifeinfusion.png';
 import luckycharm from '../components/icons/Luckycharm.png';
 import survivalcontract from '../components/icons/Survivalcontract.png';
+import cart from '../components/cart.vue';
 const perks = [
     {
       name: "Deep Impact",
@@ -45,8 +41,6 @@ const perks = [
       image: survivalcontract,
     },
   ]
-
+console.log(perks);
 const store = []
-  // https://stackoverflow.com/questions/52424306/add-html-element-in-div-vuejs
-  // TLDR ^ push item info into a new array for another template to iterate over should work if .push is nice
 </script>

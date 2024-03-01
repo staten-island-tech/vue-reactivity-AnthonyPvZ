@@ -3,7 +3,7 @@
   <h1>{{ Destination.name }}</h1>
   <img :src="Destination.image" alt=""/>
   <h2>{{ Destination.desc }}</h2>
-  <button @click="$emit('inc')">Equip</button>
+  <button v-on:click="$emit('inc')">Equip</button>
 </div>
 </template>
   
