@@ -4,10 +4,16 @@
     v-for="(destination,index) in perks"
     :key="index"
     :Destination="destination"
-    @inc="console.log('pushed');{array = destination;perks.push(array)};console.log(perks);"
+    @inc="console.log('pushed');{array = destination;store.push(array)};console.log(store);"
   /> 
 </div> 
 <div id="deck">
+  <Createperkcard
+    v-for="(destination,index) in store"
+    :key="index"
+    :Destination="destination"
+    @inc="console.log('pushed');{array = destination;store.push(array)};console.log(store);"
+  /> 
 </div>
 </template>
 
@@ -18,7 +24,7 @@ import deepimpact from '../components/icons/Deepimpact.png';
 import lifeinfusion from '../components/icons/Lifeinfusion.png';
 import luckycharm from '../components/icons/Luckycharm.png';
 import survivalcontract from '../components/icons/Survivalcontract.png';
-import cart from '../components/cart.vue';
+import { ref } from 'vue';
 const perks = [
     {
       name: "Deep Impact",
@@ -42,5 +48,5 @@ const perks = [
     },
   ]
 console.log(perks);
-const store = []
+const store = ref([])
 </script>
