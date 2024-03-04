@@ -76,7 +76,7 @@ const perks = ref([
       cost: "6 points"
     },
     {
-      name: "Scavenfer",
+      name: "Scavenger",
       desc: "Killing an enemy has a chance for them to drop a supply package, providing a 40% speed boost as well as ammo, health, armour or money.",
       image: Scavenger,
       cost: "6 points",
