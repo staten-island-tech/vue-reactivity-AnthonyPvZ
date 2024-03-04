@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="perk">
   <img :src="Destination.image" alt=""/>
     </div>
 </template>

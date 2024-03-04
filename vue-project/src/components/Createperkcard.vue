@@ -1,8 +1,9 @@
 <template>
-<div>
+<div class="card">
   <h1>{{ Destination.name }}</h1>
   <img :src="Destination.image" alt=""/>
   <h2>{{ Destination.desc }}</h2>
+  <h3>{{ Destination.cost }}</h3>
   <button v-on:click="$emit('inc')">Equip</button>
 </div>
 </template>
