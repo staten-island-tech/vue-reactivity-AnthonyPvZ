@@ -1,7 +1,8 @@
 <template>
-    <div class="perk">
-  <img :src="Destination.image" alt=""/>
-    </div>
+  <div class="img">
+    <img :src="Destination.image" alt="" />
+    <button v-on:click="$emit('remove')">Unequip</button>
+  </div>
 </template>
 
 <script setup>
